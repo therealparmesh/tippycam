@@ -1,0 +1,10 @@
+included:
+  - TippyCam
+  - TippyCamTests
+
+excluded:
+  - .derivedData-device
+  - .derivedData-tippycam
+
+strict: true
+reporter: xcode

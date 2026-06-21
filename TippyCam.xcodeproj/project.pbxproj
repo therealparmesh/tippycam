@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00D2171948B9E156347E24D2 /* CameraLayoutMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB6B9D3ED4CBE8CFCB9211 /* CameraLayoutMetrics.swift */; };
+		0189A89E7CD5005F6D58A938 /* PhotoLibraryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF97201B01857745E35A78D /* PhotoLibraryButtonView.swift */; };
+		23B0E5B92EE76FB6B3E6BED3 /* PhotoCaptureProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDA9C000C05DA89F83F8AE4 /* PhotoCaptureProcessor.swift */; };
+		36219022EC934ABE129C5F64 /* ImageOrientationFixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558633A27BC9EB2C166D3106 /* ImageOrientationFixer.swift */; };
+		392156B86145716783710C4B /* PermissionDeniedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC2EBE30E633FE8D16CD7B9 /* PermissionDeniedView.swift */; };
+		46166FA766BDB99A9A14A1C9 /* CameraControlsOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F11028F5BFCE4264935C04A /* CameraControlsOverlay.swift */; };
+		46488096338870A340F8F679 /* DeviceCapabilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51046E79D2DBEA7DA577E1A8 /* DeviceCapabilities.swift */; };
+		49539F6ADA020936A58EEA2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29ECCA14CE6FDA3A3B201A76 /* Assets.xcassets */; };
+		49D10AA3E706228482CC6D0C /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DBEE93367993F8333D9429 /* ImageProcessor.swift */; };
+		5B67D406458221D55B4F9CAF /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15303021A3BBED654423A08E /* CameraService.swift */; };
+		5E946F49C1593AE0EA281CCA /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD1774A364B10701FBE045 /* CameraPreviewView.swift */; };
+		9036D5A8568A639D6799A727 /* CameraSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B763C511CF7487C77364E /* CameraSettingsView.swift */; };
+		91F6D77D8158785AF605B1AA /* CameraMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE897A2689FE0A7BEFCEFD8 /* CameraMode.swift */; };
+		9CF3394A7B6885E46B68CC4C /* PhotoLibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F02786B630E1F71F5A1928E /* PhotoLibraryService.swift */; };
+		A4AF6489B763BD31F4E36970 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6E543843D51E638569B59B /* Logger.swift */; };
+		A6F9098709AC4382D777F0E4 /* TippyCamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0DB124F78C8C0B340A69A9 /* TippyCamApp.swift */; };
+		AB7F7C3DCE752B37AC87907C /* CameraScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8843C6744372B90AAF767370 /* CameraScreen.swift */; };
+		B8F73014DEE1D7F5B390DD7A /* CameraModePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE394C7C86D31C53F78454 /* CameraModePicker.swift */; };
+		BE184D6A0814892566E60B8E /* PhotoGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803EABF843272E557CB368EB /* PhotoGalleryView.swift */; };
+		C0F3F7F36D0268B3FB0C1937 /* ImageProcessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F30389B3DFBFE5717CD5E5C /* ImageProcessorTests.swift */; };
+		D9FFE0DDFC780CB7F60718FF /* CameraSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70695B0DB9EC1838720F7C0E /* CameraSessionManager.swift */; };
+		E72A7978E40FAD77851E02B2 /* CaptureError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00E533DFCDEEE2B7A98D7 /* CaptureError.swift */; };
+		EC476D6C4141644A51A1454E /* CaptureControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DCA38466CBB809AF5EF4E2 /* CaptureControlsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A75B6795380607D1F92A6469 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B05F38B29A9BAF6CCEC02786 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AF983C62072DC4FF77FBEA3;
+			remoteInfo = TippyCam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15303021A3BBED654423A08E /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		29ECCA14CE6FDA3A3B201A76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A0DB124F78C8C0B340A69A9 /* TippyCamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TippyCamApp.swift; sourceTree = "<group>"; };
+		2EDA9C000C05DA89F83F8AE4 /* PhotoCaptureProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureProcessor.swift; sourceTree = "<group>"; };
+		3EC2EBE30E633FE8D16CD7B9 /* PermissionDeniedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionDeniedView.swift; sourceTree = "<group>"; };
+		47DCA38466CBB809AF5EF4E2 /* CaptureControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureControlsView.swift; sourceTree = "<group>"; };
+		51046E79D2DBEA7DA577E1A8 /* DeviceCapabilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCapabilities.swift; sourceTree = "<group>"; };
+		558633A27BC9EB2C166D3106 /* ImageOrientationFixer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOrientationFixer.swift; sourceTree = "<group>"; };
+		5F02786B630E1F71F5A1928E /* PhotoLibraryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryService.swift; sourceTree = "<group>"; };
+		70695B0DB9EC1838720F7C0E /* CameraSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSessionManager.swift; sourceTree = "<group>"; };
+		803EABF843272E557CB368EB /* PhotoGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryView.swift; sourceTree = "<group>"; };
+		842B763C511CF7487C77364E /* CameraSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSettingsView.swift; sourceTree = "<group>"; };
+		8843C6744372B90AAF767370 /* CameraScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScreen.swift; sourceTree = "<group>"; };
+		8F30389B3DFBFE5717CD5E5C /* ImageProcessorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessorTests.swift; sourceTree = "<group>"; };
+		8FF97201B01857745E35A78D /* PhotoLibraryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryButtonView.swift; sourceTree = "<group>"; };
+		97F00E533DFCDEEE2B7A98D7 /* CaptureError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureError.swift; sourceTree = "<group>"; };
+		9F11028F5BFCE4264935C04A /* CameraControlsOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControlsOverlay.swift; sourceTree = "<group>"; };
+		A78E688E92BBA7E5D8B7E90B /* TippyCamTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TippyCamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE897A2689FE0A7BEFCEFD8 /* CameraMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraMode.swift; sourceTree = "<group>"; };
+		B3BE394C7C86D31C53F78454 /* CameraModePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModePicker.swift; sourceTree = "<group>"; };
+		D8DA4F70CCE3320E120DC94F /* TippyCam.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TippyCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DBEE93367993F8333D9429 /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		DD6E543843D51E638569B59B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		E7CD1774A364B10701FBE045 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		ECFB6B9D3ED4CBE8CFCB9211 /* CameraLayoutMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraLayoutMetrics.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1688E2805CC4C00434D3C366 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				5F02786B630E1F71F5A1928E /* PhotoLibraryService.swift */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		2199B6A401431E0216C3D8DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8DA4F70CCE3320E120DC94F /* TippyCam.app */,
+				A78E688E92BBA7E5D8B7E90B /* TippyCamTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31656D809E9267083D655A06 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				ACE897A2689FE0A7BEFCEFD8 /* CameraMode.swift */,
+				15303021A3BBED654423A08E /* CameraService.swift */,
+				70695B0DB9EC1838720F7C0E /* CameraSessionManager.swift */,
+				97F00E533DFCDEEE2B7A98D7 /* CaptureError.swift */,
+				2EDA9C000C05DA89F83F8AE4 /* PhotoCaptureProcessor.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		B813524736849F3A7F7FC3E1 = {
+			isa = PBXGroup;
+			children = (
+				EB83E9CEB54FBEFC406CB526 /* TippyCam */,
+				DF0CD2B38E913FD0D3A8BA0A /* TippyCamTests */,
+				2199B6A401431E0216C3D8DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF0CD2B38E913FD0D3A8BA0A /* TippyCamTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F30389B3DFBFE5717CD5E5C /* ImageProcessorTests.swift */,
+			);
+			path = TippyCamTests;
+			sourceTree = "<group>";
+		};
+		DF8205D5DE3281DEFEC61FD7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2A0DB124F78C8C0B340A69A9 /* TippyCamApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EB83E9CEB54FBEFC406CB526 /* TippyCam */ = {
+			isa = PBXGroup;
+			children = (
+				29ECCA14CE6FDA3A3B201A76 /* Assets.xcassets */,
+				DF8205D5DE3281DEFEC61FD7 /* App */,
+				31656D809E9267083D655A06 /* Camera */,
+				1688E2805CC4C00434D3C366 /* Photos */,
+				F327217410F12795F61A6F12 /* Processing */,
+				EF2F893484F216BE188FF7EF /* UI */,
+				F724A1BE965CC9E8B1AB462E /* Utilities */,
+			);
+			path = TippyCam;
+			sourceTree = "<group>";
+		};
+		EF2F893484F216BE188FF7EF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9F11028F5BFCE4264935C04A /* CameraControlsOverlay.swift */,
+				ECFB6B9D3ED4CBE8CFCB9211 /* CameraLayoutMetrics.swift */,
+				B3BE394C7C86D31C53F78454 /* CameraModePicker.swift */,
+				E7CD1774A364B10701FBE045 /* CameraPreviewView.swift */,
+				8843C6744372B90AAF767370 /* CameraScreen.swift */,
+				842B763C511CF7487C77364E /* CameraSettingsView.swift */,
+				47DCA38466CBB809AF5EF4E2 /* CaptureControlsView.swift */,
+				3EC2EBE30E633FE8D16CD7B9 /* PermissionDeniedView.swift */,
+				803EABF843272E557CB368EB /* PhotoGalleryView.swift */,
+				8FF97201B01857745E35A78D /* PhotoLibraryButtonView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F327217410F12795F61A6F12 /* Processing */ = {
+			isa = PBXGroup;
+			children = (
+				D9DBEE93367993F8333D9429 /* ImageProcessor.swift */,
+			);
+			path = Processing;
+			sourceTree = "<group>";
+		};
+		F724A1BE965CC9E8B1AB462E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				51046E79D2DBEA7DA577E1A8 /* DeviceCapabilities.swift */,
+				558633A27BC9EB2C166D3106 /* ImageOrientationFixer.swift */,
+				DD6E543843D51E638569B59B /* Logger.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		120838D200398CB0498C1E07 /* TippyCamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 924A1570133B43614211AF7B /* Build configuration list for PBXNativeTarget "TippyCamTests" */;
+			buildPhases = (
+				565EAB1CB4B7924DEAFFAFC4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7483A688FDD790CCD2AB8187 /* PBXTargetDependency */,
+			);
+			name = TippyCamTests;
+			packageProductDependencies = (
+			);
+			productName = TippyCamTests;
+			productReference = A78E688E92BBA7E5D8B7E90B /* TippyCamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8AF983C62072DC4FF77FBEA3 /* TippyCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1FAB11D6EF31F3093FD04E1 /* Build configuration list for PBXNativeTarget "TippyCam" */;
+			buildPhases = (
+				9BD76EEFA99018F48C247A4A /* Sources */,
+				53C786044F73C214BE788B74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TippyCam;
+			packageProductDependencies = (
+			);
+			productName = TippyCam;
+			productReference = D8DA4F70CCE3320E120DC94F /* TippyCam.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B05F38B29A9BAF6CCEC02786 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					120838D200398CB0498C1E07 = {
+						DevelopmentTeam = 7654L3CX5L;
+						ProvisioningStyle = Automatic;
+					};
+					8AF983C62072DC4FF77FBEA3 = {
+						DevelopmentTeam = 7654L3CX5L;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1D9129812CDA0190976C8BEC /* Build configuration list for PBXProject "TippyCam" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = B813524736849F3A7F7FC3E1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AF983C62072DC4FF77FBEA3 /* TippyCam */,
+				120838D200398CB0498C1E07 /* TippyCamTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53C786044F73C214BE788B74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49539F6ADA020936A58EEA2B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		565EAB1CB4B7924DEAFFAFC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F3F7F36D0268B3FB0C1937 /* ImageProcessorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD76EEFA99018F48C247A4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46166FA766BDB99A9A14A1C9 /* CameraControlsOverlay.swift in Sources */,
+				00D2171948B9E156347E24D2 /* CameraLayoutMetrics.swift in Sources */,
+				91F6D77D8158785AF605B1AA /* CameraMode.swift in Sources */,
+				B8F73014DEE1D7F5B390DD7A /* CameraModePicker.swift in Sources */,
+				5E946F49C1593AE0EA281CCA /* CameraPreviewView.swift in Sources */,
+				AB7F7C3DCE752B37AC87907C /* CameraScreen.swift in Sources */,
+				5B67D406458221D55B4F9CAF /* CameraService.swift in Sources */,
+				D9FFE0DDFC780CB7F60718FF /* CameraSessionManager.swift in Sources */,
+				9036D5A8568A639D6799A727 /* CameraSettingsView.swift in Sources */,
+				EC476D6C4141644A51A1454E /* CaptureControlsView.swift in Sources */,
+				E72A7978E40FAD77851E02B2 /* CaptureError.swift in Sources */,
+				46488096338870A340F8F679 /* DeviceCapabilities.swift in Sources */,
+				36219022EC934ABE129C5F64 /* ImageOrientationFixer.swift in Sources */,
+				49D10AA3E706228482CC6D0C /* ImageProcessor.swift in Sources */,
+				A4AF6489B763BD31F4E36970 /* Logger.swift in Sources */,
+				392156B86145716783710C4B /* PermissionDeniedView.swift in Sources */,
+				23B0E5B92EE76FB6B3E6BED3 /* PhotoCaptureProcessor.swift in Sources */,
+				BE184D6A0814892566E60B8E /* PhotoGalleryView.swift in Sources */,
+				0189A89E7CD5005F6D58A938 /* PhotoLibraryButtonView.swift in Sources */,
+				9CF3394A7B6885E46B68CC4C /* PhotoLibraryService.swift in Sources */,
+				A6F9098709AC4382D777F0E4 /* TippyCamApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7483A688FDD790CCD2AB8187 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AF983C62072DC4FF77FBEA3 /* TippyCam */;
+			targetProxy = A75B6795380607D1F92A6469 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1689E22A72013611EAABFA99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2026062007;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TippyCam;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSCameraUsageDescription = "TippyCam uses the camera to take photos.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "TippyCam saves photos to your library.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "TippyCam shows your photo library in the in-app gallery.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.parmscript.tippycam;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2DCBFF214386F16823BEC350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2026062007;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TippyCam;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSCameraUsageDescription = "TippyCam uses the camera to take photos.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "TippyCam saves photos to your library.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "TippyCam shows your photo library in the in-app gallery.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.parmscript.tippycam;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		55A2813F553F7B621E3E375B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parmscript.TippyCamTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TippyCam.app/TippyCam";
+			};
+			name = Release;
+		};
+		A893F88F88ED8ECA37B3F62B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parmscript.TippyCamTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TippyCam.app/TippyCam";
+			};
+			name = Debug;
+		};
+		D3D5A12D2DD1BCA0AD446D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7654L3CX5L;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D910B19EC2068F7C5D38BA1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7654L3CX5L;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D9129812CDA0190976C8BEC /* Build configuration list for PBXProject "TippyCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3D5A12D2DD1BCA0AD446D37 /* Debug */,
+				D910B19EC2068F7C5D38BA1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		924A1570133B43614211AF7B /* Build configuration list for PBXNativeTarget "TippyCamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A893F88F88ED8ECA37B3F62B /* Debug */,
+				55A2813F553F7B621E3E375B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E1FAB11D6EF31F3093FD04E1 /* Build configuration list for PBXNativeTarget "TippyCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DCBFF214386F16823BEC350 /* Debug */,
+				1689E22A72013611EAABFA99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B05F38B29A9BAF6CCEC02786 /* Project object */;
+}
