@@ -48,7 +48,11 @@ final class CameraSessionManager: @unchecked Sendable {
     func switchCamera() async throws -> Bool {
         try await withCheckedThrowingContinuation { continuation in
             sessionQueue.async {
-                guard self.isConfigured, self.captureProcessor == nil else {
+                guard self.isConfigured else {
+                    continuation.resume(throwing: CaptureError.configurationFailed)
+                    return
+                }
+                guard self.captureProcessor == nil else {
                     continuation.resume(throwing: CaptureError.captureInProgress)
                     return
                 }
@@ -168,6 +172,10 @@ final class CameraSessionManager: @unchecked Sendable {
                 session.addInput(previousInput)
                 cameraInput = previousInput
                 cameraPosition = previousPosition
+            } else {
+                // Session has no camera input; mark as unconfigured
+                cameraInput = nil
+                isConfigured = false
             }
             session.commitConfiguration()
             throw CaptureError.configurationFailed

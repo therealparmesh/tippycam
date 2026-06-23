@@ -11,14 +11,15 @@ final class ImageProcessorTests: XCTestCase {
             mode: .photo
         )
 
-        XCTAssertEqual(result.image.cgImage?.width, source.cgImage?.width)
-        XCTAssertEqual(result.image.cgImage?.height, source.cgImage?.height)
+        let resultImage = try XCTUnwrap(UIImage(data: result.data))
+        XCTAssertEqual(resultImage.cgImage?.width, source.cgImage?.width)
+        XCTAssertEqual(resultImage.cgImage?.height, source.cgImage?.height)
         XCTAssertGreaterThan(
-            luminance(averageColor(of: result.image)),
+            luminance(averageColor(of: resultImage)),
             luminance(averageColor(of: source)) + 0.02
         )
         XCTAssertGreaterThan(
-            chroma(averageColor(of: result.image)),
+            chroma(averageColor(of: resultImage)),
             chroma(averageColor(of: source)) + 0.01
         )
         XCTAssertFalse(result.portraitDepthApplied)
@@ -33,8 +34,9 @@ final class ImageProcessorTests: XCTestCase {
             mode: .portrait
         )
 
-        XCTAssertEqual(result.image.cgImage?.width, source.cgImage?.width)
-        XCTAssertEqual(result.image.cgImage?.height, source.cgImage?.height)
+        let resultImage = try XCTUnwrap(UIImage(data: result.data))
+        XCTAssertEqual(resultImage.cgImage?.width, source.cgImage?.width)
+        XCTAssertEqual(resultImage.cgImage?.height, source.cgImage?.height)
         XCTAssertFalse(result.portraitDepthApplied)
         XCTAssertTrue(result.usedPortraitFallback)
     }

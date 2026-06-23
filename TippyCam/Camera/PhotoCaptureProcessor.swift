@@ -1,6 +1,6 @@
 @preconcurrency import AVFoundation
 
-struct CapturedPhoto: @unchecked Sendable {
+struct CapturedPhoto: Sendable {
     let data: Data
 }
 

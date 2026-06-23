@@ -18,6 +18,8 @@ final class PhotoLibraryService: NSObject, PHPhotoLibraryChangeObserver {
     private var latestAssetIdentifier: String?
     @ObservationIgnored
     private var hasLoadedGalleryAssets = false
+    @ObservationIgnored
+    private var pendingRefreshTask: Task<Void, Never>?
 
     var hasReadAccess: Bool {
         authorizationStatus == .authorized || authorizationStatus == .limited
@@ -150,7 +152,16 @@ final class PhotoLibraryService: NSObject, PHPhotoLibraryChangeObserver {
 
     nonisolated func photoLibraryDidChange(_ changeInstance: PHChange) {
         Task { @MainActor [weak self] in
-            self?.refreshAfterLibraryMutation()
+            self?.scheduleRefresh()
+        }
+    }
+
+    private func scheduleRefresh() {
+        pendingRefreshTask?.cancel()
+        pendingRefreshTask = Task {
+            try? await Task.sleep(for: .milliseconds(250))
+            guard !Task.isCancelled else { return }
+            refreshAfterLibraryMutation()
         }
     }
 

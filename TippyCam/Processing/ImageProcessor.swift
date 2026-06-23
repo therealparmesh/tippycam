@@ -1,10 +1,8 @@
 @preconcurrency import CoreImage
 import CoreImage.CIFilterBuiltins
 import ImageIO
-import UIKit
 
-struct ProcessedPhotoResult: @unchecked Sendable {
-    let image: UIImage
+struct ProcessedPhotoResult: Sendable {
     let data: Data
     let portraitDepthApplied: Bool
     let usedPortraitFallback: Bool
@@ -48,13 +46,9 @@ final class ImageProcessor: @unchecked Sendable {
         let settings = TippyLookSettings(mode: mode)
         let renderedImage = applyTippyLook(to: normalizedInput, settings: settings)
             .cropped(to: normalizedInput.extent)
-        guard let cgImage = context.createCGImage(renderedImage, from: renderedImage.extent) else {
-            throw CaptureError.processingFailed
-        }
         let data = try encodedPhotoData(from: renderedImage, compressionQuality: 0.98)
 
         return ProcessedPhotoResult(
-            image: UIImage(cgImage: cgImage, scale: 1, orientation: .up),
             data: data,
             portraitDepthApplied: depthImage != nil,
             usedPortraitFallback: mode == .portrait && depthImage == nil

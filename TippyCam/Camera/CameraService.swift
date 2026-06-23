@@ -38,9 +38,12 @@ final class CameraService {
     func resume() async {
         shouldRunSession = true
 
-        if state == .denied,
-           AVCaptureDevice.authorizationStatus(for: .video) == .authorized {
+        let currentAuth = AVCaptureDevice.authorizationStatus(for: .video)
+        if state == .denied, currentAuth == .authorized {
             state = .idle
+        } else if state == .ready, currentAuth != .authorized {
+            sessionManager.stopRunning()
+            state = .denied
         }
 
         switch state {
@@ -88,6 +91,7 @@ final class CameraService {
     func capture() async {
         guard state == .ready, !isProcessing, !isSwitchingCamera else { return }
 
+        errorMessage = nil
         let captureMode = cameraMode
 
         isProcessing = true
@@ -119,6 +123,7 @@ final class CameraService {
     func switchCamera() async {
         guard state == .ready, !isProcessing, !isSwitchingCamera else { return }
 
+        errorMessage = nil
         isSwitchingCamera = true
         defer { isSwitchingCamera = false }
 
